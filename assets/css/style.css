@@ -1,7 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: var(--textFont);
+
+    .logo {
+        font-size: var(--logoSize);
+        font-family: var(--logoFont);
+    }
 }
 
 body {
     margin: 0;
+
+    /* VARIABLES  */
+    /* Colours */
+    --backgroundColour: #F5F5F5;
+    --offWhite: #EDEDEA;
+    --darkBlue: #13224A;
+
+    /* Typography */
+    --textFont: "jura", sans-serif;
+    --midHeader: 24px;
+    --bigHeader: 36px;
+    --bigBigHeader: 64px;
+    --logoFont: "jockey one";
+    --logoSize: 40px;
+
+    /* Spacing */
+    --gap: 20px;
+    --sectionPadding: 100px;
+    --bodyMargin: 140px;
 }
+
+/* FRONT PAGE */
+
+/* ALL RECIPES */
+
+/* SINGLE RECIPE */
+
+/* ADD RECIPE */
+
+/* PROFILE */
