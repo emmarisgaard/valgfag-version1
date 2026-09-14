@@ -4,4 +4,31 @@
 
 body {
     margin: 0;
+
+    /* VARIABLES  */
+    /* Colours */
+    --backgroundColour: #F5F5F5;
+    --offWhite: #EDEDEA;
+    --darkBlue: #13224A;
+
+    /* Typography */
+    --textFont: jura, sans-serif;
+    --midHeader: 24px;
+    --bigHeader: 36px;
+    --bigBigHeader: 64px;
+
+    /* Spacing */
+    --gap: 20px;
+    --sectionPadding: 100px;
+    --bodyMargin: 140px;
 }
+
+/* FRONT PAGE */
+
+/* ALL RECIPES */
+
+/* SINGLE RECIPE */
+
+/* ADD RECIPE */
+
+/* PROFILE */
