@@ -4,11 +4,6 @@
 * {
     box-sizing: border-box;
     font-family: var(--textFont);
-
-    .logo {
-        font-size: var(--logoSize);
-        font-family: var(--logoFont);
-    }
 }
 
 body {
@@ -19,19 +14,80 @@ body {
     --backgroundColour: #F5F5F5;
     --offWhite: #EDEDEA;
     --darkBlue: #13224A;
+    --lightBlue: #E4EAF8;
 
     /* Typography */
     --textFont: "jura", sans-serif;
     --midHeader: 24px;
     --bigHeader: 36px;
     --bigBigHeader: 64px;
-    --logoFont: "jockey one";
+    --logoFont: "jockey-one", sans-serif;
     --logoSize: 40px;
 
     /* Spacing */
     --gap: 20px;
     --sectionPadding: 100px;
     --bodyMargin: 140px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--lightBlue);
+    padding: 40px;
+
+    .logo {
+        font-size: var(--logoSize);
+        font-family: var(--logoFont);
+        font-weight: bolder;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .globalNav {
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: var(--midHeader);
+            font-weight: bold;
+        }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap);
+    }
+
+    .loginSearchCircles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap);
+    }
+
+    .headerSearch {
+        background-color: var(--darkBlue);
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+    }
+
+    .login {
+        background-color: var(--darkBlue);
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+    }
 }
 
 /* FRONT PAGE */
