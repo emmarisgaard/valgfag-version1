@@ -200,6 +200,17 @@ footer {
     }
 }
 
+/* HEADER SECTION */
+.headerImageSection {
+    img {
+        height: 400px;
+        width: 100%;
+    }
+
+
+}
+
+
 /* FRONT PAGE */
 
 /* ALL RECIPES */
@@ -340,3 +351,92 @@ footer {
 
 
 /* PROFILE */
+
+
+/* ALL TOOLS */
+
+.toolCategories {
+    display: flex;
+    justify-content: space-between;
+
+
+    .toolCategori {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 175px;
+            width: 175px;
+            object-fit: cover;
+            border-radius: 100px;
+            background-color: #13224A;
+        }
+    }
+
+
+
+}
+
+.toolCards {
+
+    display: flex;
+    gap: var(--gap);
+    padding: var(--bodyMargin);
+    flex-wrap: wrap;
+
+
+    .toolCard {
+        background-color: white;
+        width: fit-content;
+
+
+        img {
+            width: 100%;
+        }
+
+
+        .toolCardInfo {
+            display: flex;
+            flex-direction: column;
+            margin: var(--gap);
+            padding-bottom: var(--gap);
+            gap: var(--smallGap);
+
+            h1 {
+                font-size: var(--midHeader);
+            }
+
+            hr {
+                color: var(--darkBlue);
+            }
+
+            .toolCardProfile {
+                display: flex;
+
+                .profileHats {
+                    display: flex;
+                }
+            }
+        }
+
+
+
+        .toolCardButtons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--smallGap);
+
+            button {
+                height: 35px;
+                background-color: var(--darkBlue);
+                color: var(--offWhite);
+                border-radius: 10px;
+                padding-left: var(--gap);
+                padding-right: var(--gap);
+            }
+        }
+
+    }
+}
