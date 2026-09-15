@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: var(--textFont);
+    background-color: var(--backgroundColour);
 }
 
 body {
@@ -29,7 +30,7 @@ body {
     --bodyMargin: 140px;
 
     /* TEXTAREA */
-    --innerShadow: inset 7px -7px 15px rgba(0, 0, 0, 0.5);
+    --innerShadow: inset 3px -3px 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -190,5 +191,93 @@ footer {
 /* SINGLE RECIPE */
 
 /* ADD RECIPE */
+.addRecipeSite {
+
+    input[type="number"],
+    input[type="text"],
+    select {
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px;
+        outline: none;
+        border: solid 1px var(--lightBlue);
+        box-shadow: var(--innerShadow);
+        background-color: white;
+    }
+
+    input[type="text"] {
+        width: 250px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+
+    select {
+        border: solid 1px var(--darkBlue);
+    }
+
+    .addRecipeTime {
+        display: flex;
+        gap: var(--gap);
+
+        input {
+            width: 50px;
+        }
+
+        .totalTime {
+            height: 30px;
+            border-radius: 10px;
+            width: 50px;
+            background-color: #D7D7D7;
+        }
+
+    }
+
+    .addRecipeDescription {
+        input {
+            height: 150px;
+        }
+    }
+
+
+    .addRecipeTags {
+        display: flex;
+
+    }
+
+    .addRecipeAddIngredient {
+        .AddIngredient {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        .addIngredientTitels {
+            display: flex;
+            gap: var(--gap);
+
+            p {
+                width: 55px;
+            }
+        }
+    }
+
+    .addRecipeMealtype,
+    .addRecipeAllergeens,
+    .addRecipePrefferences {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap);
+    }
+
+    .checkBox {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
 
 /* PROFILE */
