@@ -1,0 +1,116 @@
+body {
+    font-family: 'Jura', sans-serif;
+    background-color: #EDEDEA;
+
+}
+
+.Recipe-card-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    margin-block: 10px;
+    height: 20px;
+}
+
+.Recipe-card {
+    background-color: #13224A;
+    height: 320px;
+    width: 270px;
+    margin: 16px 16px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    font-size: 10px;
+    box-shadow: 0 6px 6px #000;
+}
+
+.Recipe-card-icon-cook {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.Recipe-chef-info {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    display: block;
+    height: 1px;
+    background-color: #EDEDEA;
+
+}
+
+.Recipe-card-info {
+    padding: 16px;
+}
+
+.Recipe-card-img {
+    width: 100%;
+    height: 130px;
+}
+
+.Recipe-h1-card {
+    margin: 0px;
+    font-size: 20px;
+    color: #EDEDEA;
+}
+
+.Recipe-h2-card {
+    margin-block: 4px;
+    font-size: 18px;
+    color: #EDEDEA;
+    font-weight: normal;
+}
+
+.Recipe-p-card {
+    font-size: 16px;
+    color: #EDEDEA;
+    margin-block: 4px;
+}
+
+.Recipe-card-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Recipe-button-card2 {
+    background-color: #EDEDEA;
+    display: flex;
+    color: #13224A;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+
+
+.Recipe-button-card1 {
+    display: flex;
+    background-color: #13224A;
+    color: #EDEDEA;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 30px;
+
+}
+
+.Recipe-button-card2:hover {
+    background-color: #EDEDEA;
+    border-color: #13224A 1px solid;
+    color: #13224A;
+
+}
