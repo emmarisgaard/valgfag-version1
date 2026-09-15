@@ -43,10 +43,11 @@ body {
     --mediumGap: 20px;
     --largeGap: 50px;
     --sectionPadding: 100px;
-    --bodyMargin: 140px;
+    --bodyMargin: 30px 140px 30px 140px;
 
     /* TEXTAREA */
     --innerShadow: inset 3px -3px 10px rgba(0, 0, 0, 0.1);
+    --shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -109,14 +110,14 @@ header {
 
         i {
             color: var(--lightBlue);
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 
     .headerSearch {
         background-color: var(--darkBlue);
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -125,8 +126,8 @@ header {
 
     .login {
         background-color: var(--darkBlue);
-        height: 60px;
-        width: 60px;
+        height: 45px;
+        width: 45px;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -201,10 +202,52 @@ footer {
 }
 
 /* HEADER SECTION */
+
+.headerImageSection {
+    position: relative;
+    width: 100%;
+
+    h1,
+    .headerButtons {
+        position: absolute;
+    }
+
+    h1 {
+        top: 100px;
+        left: 50px;
+        font-size: var(--bigBigHeader);
+    }
+
+    .headerButtons {
+        bottom: 50px;
+        right: 50px;
+
+        button {
+            height: 45px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            box-shadow: var(--innerShadow);
+            border-color: var(--darkBlue);
+            border-width: 5px;
+        }
+
+        input {
+            height: 45px;
+            width: 400px;
+            border-radius: 100px;
+        }
+    }
+}
+
+
 .headerImageSection {
     img {
         height: 400px;
         width: 100%;
+        object-fit: cover;
     }
 
 
@@ -358,12 +401,13 @@ footer {
 .toolCategories {
     display: flex;
     justify-content: space-between;
-
+    padding: var(--bodyMargin);
 
     .toolCategori {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: var(--gap);
 
         img {
             height: 175px;
@@ -372,6 +416,23 @@ footer {
             border-radius: 100px;
             background-color: #13224A;
         }
+
+        p {
+            font-weight: bold;
+        }
+
+    }
+
+    .toolCategori:hover {
+        font-weight: bolder;
+        color: var(--darkBlue);
+        text-decoration: underline;
+        text-decoration-color: var(--darkBlue);
+        text-underline-offset: 10px;
+
+        img {
+            box-shadow: var(--shadow);
+        }
     }
 
 
@@ -379,16 +440,16 @@ footer {
 }
 
 .toolCards {
-
     display: flex;
     gap: var(--gap);
     padding: var(--bodyMargin);
     flex-wrap: wrap;
+    justify-content: space-between;
 
 
     .toolCard {
         background-color: white;
-        width: fit-content;
+        width: 285px;
 
 
         img {
@@ -399,12 +460,12 @@ footer {
         .toolCardInfo {
             display: flex;
             flex-direction: column;
-            margin: var(--gap);
-            padding-bottom: var(--gap);
-            gap: var(--smallGap);
+            margin: var(--mediumGap);
+            gap: var(--gap);
 
             h1 {
                 font-size: var(--midHeader);
+                width: fit-content;
             }
 
             hr {
@@ -413,6 +474,8 @@ footer {
 
             .toolCardProfile {
                 display: flex;
+                align-items: center;
+                justify-content: space-between;
 
                 .profileHats {
                     display: flex;
@@ -426,17 +489,52 @@ footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: var(--smallGap);
+
+            i:hover {
+                color: var(--darkBlue);
+            }
+
+
+            .saveNlike {
+                display: flex;
+                flex-direction: row;
+                gap: var(--mediumGap);
+                align-items: center;
+            }
+
+            .totalLikes {
+                display: flex;
+                flex-direction: row;
+                gap: var(--smallGap);
+                align-items: center;
+
+                p {
+                    font-size: 12px;
+                }
+
+
+            }
 
             button {
                 height: 35px;
                 background-color: var(--darkBlue);
                 color: var(--offWhite);
                 border-radius: 10px;
-                padding-left: var(--gap);
-                padding-right: var(--gap);
+                padding-left: var(--mediumGap);
+                padding-right: var(--mediumGap);
+            }
+
+            button:hover {
+                border-color: var(--darkBlue);
+                border-width: 2px;
+                background-color: var(--lightBlue);
+                color: var(--darkBlue);
+                box-shadow: var(--shadow);
+
             }
         }
 
     }
+
+
 }
