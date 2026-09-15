@@ -193,6 +193,11 @@ footer {
 /* ADD RECIPE */
 .addRecipeSite {
 
+    .addRecipeTitle,
+    section {
+        padding: var(--bodyMargin)
+    }
+
     input[type="number"],
     input[type="text"],
     select {
