@@ -1,7 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: var(--textFont);
+    background-color: var(--backgroundColour);
 }
 
 body {
     margin: 0;
+
+    p {
+        margin: 0;
+        line-height: 150%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+
+    /* VARIABLES  */
+    /* Colours */
+    --backgroundColour: #F5F5F5;
+    --offWhite: #EDEDEA;
+    --darkBlue: #13224A;
+    --lightBlue: #E4EAF8;
+
+    /* Typography */
+    --textFont: "jura",
+    sans-serif;
+    --midHeader: 24px;
+    --bigHeader: 36px;
+    --bigBigHeader: 64px;
+    --logoFont: "Jockey One",
+    sans-serif;
+    --logoSize: 40px;
+
+    /* Spacing */
+    --gap: 30px;
+    --smallGap: 5px;
+    --mediumGap: 20px;
+    --largeGap: 50px;
+    --sectionPadding: 100px;
+    --bodyMargin: 140px;
+
+    /* TEXTAREA */
+    --innerShadow: inset 3px -3px 10px rgba(0, 0, 0, 0.1);
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--lightBlue);
+    padding: 40px;
+
+    .logo {
+        font-size: var(--logoSize);
+        font-family: var(--logoFont);
+        font-weight: bolder;
+        width: 600px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .globalNav {
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: var(--midHeader);
+            font-weight: bold;
+            display: flex;
+            text-align: center;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .loginSearchCircles {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: var(--gap);
+        width: 600px;
+
+        i {
+            color: var(--lightBlue);
+            font-size: 30px;
+        }
+    }
+
+    .headerSearch {
+        background-color: var(--darkBlue);
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login {
+        background-color: var(--darkBlue);
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--darkBlue);
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+
+    .logoFooter {
+        font-size: var(--logoSize);
+        font-family: var(--logoFont);
+        font-weight: bolder;
+
+        a {
+            text-decoration: none;
+            color: var(--offWhite);
+        }
+    }
+
+
+    .footerNav {
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--offWhite);
+            font-size: var(--midHeader);
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--gap);
+    }
+
+    .footerSearch {
+        background-color: var(--offWhite);
+        width: 300px;
+        height: 50px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        box-shadow: var(--innerShadow);
+
+
+        i {
+            color: var(--darkBlue);
+            font-size: 30px;
+        }
+    }
+}
+
+/* FRONT PAGE */
+
+/* ALL RECIPES */
+
+/* SINGLE RECIPE */
+.recipeAuthor,
+.recipePrep-Cook {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recipeTitleAuthor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recipeTime {
+    display: flex;
+    gap: 5px;
+}
+
+.chefHats {
+    display: flex;
+    gap: 0;
+}
+
+.fa-clock,
+.fa-circle-user {
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.recipeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--largeGap);
+}
+
+.recipeInfoRating {
+    display: flex
+}
+
+
+/* ADD RECIPE */
+.addRecipeSite {
+
+    .addRecipeTitle,
+    section {
+        padding: var(--bodyMargin)
+    }
+
+    input[type="number"],
+    input[type="text"],
+    select {
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px;
+        outline: none;
+        border: solid 1px var(--lightBlue);
+        box-shadow: var(--innerShadow);
+        background-color: white;
+    }
+
+    input[type="text"] {
+        width: 250px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+
+    select {
+        border: solid 1px var(--darkBlue);
+    }
+
+    .addRecipeTime {
+        display: flex;
+        gap: var(--gap);
+
+        input {
+            width: 50px;
+        }
+
+        .totalTime {
+            height: 30px;
+            border-radius: 10px;
+            width: 50px;
+            background-color: #D7D7D7;
+        }
+
+    }
+
+    .addRecipeDescription {
+        input {
+            height: 150px;
+        }
+    }
+
+
+    .addRecipeTags {
+        display: flex;
+
+    }
+
+    .addRecipeAddIngredient {
+        .AddIngredient {
+            display: flex;
+            gap: var(--gap);
+        }
+
+        .addIngredientTitels {
+            display: flex;
+            gap: var(--gap);
+
+            p {
+                width: 55px;
+            }
+        }
+    }
+
+    .addRecipeMealtype,
+    .addRecipeAllergeens,
+    .addRecipePrefferences {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap);
+    }
+
+    .checkBox {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+
+/* PROFILE */

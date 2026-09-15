@@ -16,6 +16,177 @@
 
 <body>
 
+<body class="addRecipeSite">
+	<header>
+		<h1 class="logo"><a href="index.html">FOOD4THOUGHT</a></h1>
+		<ul class="globalNav">
+			<li><a href="allRecipes.html">Recipes</a></li>
+			<li><a href="#">Tools & <br>
+					Recommendations</a></li>
+			<li><a href="#">Foodstories <br>& Tips</a></li>
+		</ul>
+		<div class="loginSearchCircles">
+			<div class="headerSearch"><i class="fa-solid fa-magnifying-glass"></i></div>
+			<div class="login"><i class="fa-regular fa-user"></i></div>
+		</div>
+
+	</header>
+	<h1>Add recipe</h1>
+	<section>
+		<div class="addRecipeTitle">
+			<p>Recipe Title</p>
+			<input type="text" placeholder="Inter the title of your recipe">
+		</div>
+
+
+		<div class="addRecipeTime">
+			<div>
+				<p>Prep time</p>
+				<input type="number" value="1" min="0">
+			</div>
+			<div>
+				<p>Cook time</p>
+				<input type="number" value="4" min="0">
+			</div>
+			<div>
+				<p>Total time</p>
+				<div class="totalTime"></div>
+			</div>
+		</div>
+
+
+		<div class="addRecipeDescription">
+			<p>Description (max. 150 characters)</p>
+			<input type="text">
+		</div>
+
+		<div class="addRecipePortions">
+			<p></p>
+			<input type="number" value="4" min="0">
+		</div>
+
+		<div class="addRecipeAddIngredient">
+			<div class="addIngredientTitels">
+				<p>Amount</p>
+				<p>Unit</p>
+				<p>Ingredient</p>
+			</div>
+			<div class="AddIngredient">
+				<input type="number" value="0" min="0">
+				<select>
+					<option>tsp</option>
+					<option>cup</option>
+				</select>
+				<input type="text">
+			</div>
+
+			<div class="AddIngredient">
+				<input type="number" value="0" min="0">
+				<select>
+					<option>tsp</option>
+					<option>cup</option>
+				</select>
+				<input type="text">
+			</div>
+
+			<div class="AddIngredient">
+				<input type="number" value="0" min="0">
+				<select>
+					<option>tsp</option>
+					<option>cup</option>
+				</select>
+				<input type="text">
+			</div>
+
+		</div>
+	</section>
+	<section>
+		<p></p>
+		<div class="addRecipeInstructions">
+			<ol>
+				<li><input type="text"></li>
+				<li><input type="text"></li>
+				<li><input type="text"></li>
+				<li><input type="text"></li>
+			</ol>
+			<p></p>
+		</div>
+
+		<div class="addRecipeTags">
+			<p>Add tags</p>
+			<p>Mealtype</p>
+			<p>Select at least one mealtype</p>
+			<div class="addRecipeMealtype">
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Breakfast</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Lunch</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Dinner</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Snack</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Dessert</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Bread</p>
+				</div>
+			</div>
+			<p>Allergeens</p>
+			<div class="addRecipeAllergeens">
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Gluten</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Nuts</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Shellfish</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Dairy</p>
+				</div>
+			</div>
+			<p>Prefferences</p>
+			<div class="addRecipePrefferences">
+
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Vegetarian</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Vegan</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Keto</p>
+				</div>
+				<div class="checkBox">
+					<input type="checkbox">
+					<p>Low carb</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<button>Save as draft</button>
+		<button>Post recipe</button>
+	</section>
 
 </body>
 
