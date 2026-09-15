@@ -3,11 +3,11 @@
 * {
     box-sizing: border-box;
     font-family: var(--textFont);
-    background-color: var(--backgroundColour);
-}
 
-body {
-    margin: 0;
+    body {
+        margin: 0;
+        background-color: var(--backgroundColour);
+    }
 
     p {
         margin: 0;
@@ -67,72 +67,73 @@ header {
             color: black;
         }
     }
+}
 
-    .globalNav {
+.globalNav {
 
-        ul {
-            padding: 0;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: var(--midHeader);
-            font-weight: bold;
-            display: flex;
-            text-align: center;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            text-underline-offset: 6px;
-        }
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
+    ul {
+        padding: 0;
     }
 
-    .loginSearchCircles {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: var(--gap);
-        width: 600px;
-
-        i {
-            color: var(--lightBlue);
-            font-size: 30px;
-        }
+    li {
+        list-style: none;
     }
 
-    .headerSearch {
-        background-color: var(--darkBlue);
-        height: 60px;
-        width: 60px;
-        border-radius: 100%;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: var(--midHeader);
+        font-weight: bold;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
     }
 
-    .login {
-        background-color: var(--darkBlue);
-        height: 60px;
-        width: 60px;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.loginSearchCircles {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--gap);
+    width: 600px;
+
+    i {
+        color: var(--lightBlue);
+        font-size: 30px;
     }
 }
+
+.headerSearch {
+    background-color: var(--darkBlue);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background-color: var(--darkBlue);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* FOOTER */
 
@@ -155,50 +156,51 @@ footer {
             color: var(--offWhite);
         }
     }
+}
 
 
-    .footerNav {
-        li {
-            list-style: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--offWhite);
-            font-size: var(--midHeader);
-
-        }
-
-        a:hover {
-            text-decoration: underline;
-            text-underline-offset: 6px;
-        }
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--gap);
+.footerNav {
+    li {
+        list-style: none;
     }
 
-    .footerSearch {
-        background-color: var(--offWhite);
-        width: 300px;
-        height: 50px;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-right: 20px;
-        box-shadow: var(--innerShadow);
+    a {
+        text-decoration: none;
+        color: var(--offWhite);
+        font-size: var(--midHeader);
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.footerSearch {
+    background-color: var(--offWhite);
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    box-shadow: var(--innerShadow);
 
 
-        i {
-            color: var(--darkBlue);
-            font-size: 30px;
-        }
+    i {
+        color: var(--darkBlue);
+        font-size: 30px;
     }
 }
+
 
 /* FRONT PAGE */
 
