@@ -461,15 +461,11 @@ footer {
             display: flex;
             flex-direction: column;
             margin: var(--mediumGap);
-            gap: var(--gap);
+            gap: var(--mediumGap);
 
             h1 {
                 font-size: var(--midHeader);
                 width: fit-content;
-            }
-
-            hr {
-                color: var(--darkBlue);
             }
 
             .toolCardProfile {
@@ -480,6 +476,13 @@ footer {
                 .profileHats {
                     display: flex;
                 }
+            }
+
+            hr {
+                border: none;
+                height: 1px;
+                background-color: var(--darkBlue);
+                margin: 0;
             }
         }
 
