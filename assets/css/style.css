@@ -538,3 +538,63 @@ footer {
 
 
 }
+
+/* SINGLE TOOL */
+.singleToolInfo {
+    display: grid;
+    padding: var(--bodyMargin);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--largeGap);
+
+    .singleToolDetails {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+    }
+
+    .singleToolTitle {
+
+        i {
+            font-size: 35px;
+        }
+    }
+
+    .singleToolTitle,
+    .singleToolName,
+    .singleToolDate {
+        display: flex;
+        align-items: center;
+        gap: var(--mediumGap);
+    }
+
+    .singleToolProfile,
+    .singleToolLikesNComments {
+        display: flex;
+        gap: var(--largeGap);
+    }
+
+    .singleToolLikesNComments {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+
+    .singleToolIcons {
+        font-size: 35px;
+        display: flex;
+        gap: var(--gap);
+        color: var(--darkBlue);
+    }
+
+
+    img {
+        width: 100%;
+    }
+
+
+}
+
+
+.singleToolDescription {
+    display: flex;
+    padding: var(--bodyMargin);
+}
