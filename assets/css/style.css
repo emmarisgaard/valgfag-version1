@@ -9,6 +9,17 @@
 body {
     margin: 0;
 
+    p {
+        margin: 0;
+        line-height: 150%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+    }
+
     /* VARIABLES  */
     /* Colours */
     --backgroundColour: #F5F5F5;
@@ -17,15 +28,20 @@ body {
     --lightBlue: #E4EAF8;
 
     /* Typography */
-    --textFont: "jura", sans-serif;
+    --textFont: "jura",
+    sans-serif;
     --midHeader: 24px;
     --bigHeader: 36px;
     --bigBigHeader: 64px;
-    --logoFont: "Jockey One", sans-serif;
+    --logoFont: "Jockey One",
+    sans-serif;
     --logoSize: 40px;
 
     /* Spacing */
     --gap: 30px;
+    --smallGap: 5px;
+    --mediumGap: 20px;
+    --largeGap: 50px;
     --sectionPadding: 100px;
     --bodyMargin: 140px;
 
@@ -189,6 +205,45 @@ footer {
 /* ALL RECIPES */
 
 /* SINGLE RECIPE */
+.recipeAuthor,
+.recipePrep-Cook {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recipeTitleAuthor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recipeTime {
+    display: flex;
+    gap: 5px;
+}
+
+.chefHats {
+    display: flex;
+    gap: 0;
+}
+
+.fa-clock,
+.fa-circle-user {
+    font-size: 20px;
+    padding-top: 4px;
+}
+
+.recipeInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--largeGap);
+}
+
+.recipeInfoRating {
+    display: flex
+}
+
 
 /* ADD RECIPE */
 .addRecipeSite {
