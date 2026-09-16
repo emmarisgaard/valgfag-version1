@@ -4,6 +4,30 @@ body {
 
 }
 
+.all-recipes {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--largeGap);
+    justify-content: space-around;
+
+}
+
+.Whole-site {
+    display: flex;
+
+}
+
+aside {
+    width: 450px;
+    background: #f8f8f8;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    height: auto;
+    position: sticky;
+    top: 10px;
+}
+
 .Recipe-card-icon {
     width: 15px;
     height: 15px;
