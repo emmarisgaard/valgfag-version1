@@ -55,6 +55,7 @@ h3 {
 
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -890,7 +891,7 @@ footer {
 /* Tool cards */
 .allToolsToolCards {
     margin-top: 20px;
-    padding: 0 140px 30px 140px;
+    /* padding: 0 140px 30px 140px; */
     display: grid;
     grid-template-columns: repeat(auto-fit, 270px);
     gap: var(--mediumGap);
