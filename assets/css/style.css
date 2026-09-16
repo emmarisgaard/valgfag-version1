@@ -77,7 +77,7 @@ header {
         font-size: var(--logoSize);
         font-family: var(--logoFont);
         font-weight: bolder;
-        width: 600px;
+        width: 400px;
 
         a {
             font-family: var(--logoFont);
@@ -89,10 +89,9 @@ header {
     /* NAVIGATION */
     .globalNav {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-evenly;
         align-items: center;
-        gap: 60px;
 
         ul {
             padding: 0;
@@ -127,7 +126,7 @@ header {
         justify-content: flex-end;
         align-items: center;
         gap: var(--smallGap);
-        width: 600px;
+        width: 400px;
 
         i,
         a {
