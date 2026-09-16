@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.filter').forEach(filter => {
 
     const title = filter.querySelector('label:first-child');
