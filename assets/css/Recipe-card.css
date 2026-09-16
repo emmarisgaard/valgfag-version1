@@ -5,7 +5,7 @@ body {
 }
 
 .all-recipes {
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: var(--largeGap);
@@ -16,6 +16,23 @@ body {
 .Whole-site {
     display: flex;
 
+}
+
+.singleRecipeTags {
+    display: flex;
+    flex-direction: row;
+    gap: var(--mediumGap);
+    justify-content: center;
+    margin-top: 10px;
+
+
+    div {
+        min-width: 50px;
+        padding: 5px 15px 5px 15px;
+        background-color: var(--lightBlue);
+        box-shadow: var(--shadow);
+        border-radius: 50px;
+    }
 }
 
 .filter>label:first-child::after {

@@ -272,48 +272,46 @@ footer {
 
 /* SINGLE RECIPE */
 
-.singleRecipeInfo {
 
 
 
-    .singleRecipeStars {
-        display: flex;
-        flex-direction: row;
-        gap: var(--smallGap);
-        align-items: center;
+.singleRecipeStars {
+    display: flex;
+    flex-direction: row;
+    gap: var(--smallGap);
+    align-items: center;
+}
+
+.singleRecipeTags {
+    display: flex;
+    flex-direction: row;
+    gap: var(--mediumGap);
+
+    div {
+        min-width: 50px;
+        padding: 5px 15px 5px 15px;
+        background-color: var(--lightBlue);
+        box-shadow: var(--shadow);
+        border-radius: 50px;
     }
+}
 
-    .singleRecipeTags {
-        display: flex;
-        flex-direction: row;
-        gap: var(--mediumGap);
+.recipeTime {
+    display: flex;
+    gap: var(--mediumGap);
 
-        div {
-            min-width: 50px;
-            padding: 5px 15px 5px 15px;
-            background-color: var(--lightBlue);
-            box-shadow: var(--shadow);
-            border-radius: 50px;
-        }
+    i {
+        font-size: 18px;
+        max-height: 18px;
+        padding: 0;
+        margin: 0;
     }
+}
 
-    .recipeTime {
-        display: flex;
-        gap: var(--mediumGap);
-
-        i {
-            font-size: 18px;
-            max-height: 18px;
-            padding: 0;
-            margin: 0;
-        }
-    }
-
-    .fa-clock,
-    .fa-circle-user {
-        font-size: 20px;
-        padding-top: 4px;
-    }
+.fa-clock,
+.fa-circle-user {
+    font-size: 20px;
+    padding-top: 4px;
 }
 
 
@@ -433,6 +431,41 @@ footer {
     }
 }
 
+.relatedTools,
+.relatedRecipes {
+    display: flex;
+    flex-direction: row;
+    padding: var(--bodyMargin);
+}
+
+.commentSection {
+    padding: 30px 300px 30px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    .commentsHeader {
+        display: flex;
+        gap: var(--mediumGap);
+        align-items: center;
+    }
+
+    .commentArea {
+        input {
+            width: 400px;
+            height: 200px;
+        }
+    }
+
+    .otherComment {
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 5px;
+        border-color: var(--darkBlue);
+        background-color: var(--lightBlue);
+    }
+
+}
 
 
 
