@@ -237,13 +237,20 @@ footer {
 }
 
 .recipeInfo {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--largeGap);
 }
 
 .recipeInfoRating {
-    display: flex
+    display: flex;
+}
+
+.single-recipe-img {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 

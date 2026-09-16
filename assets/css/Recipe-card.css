@@ -4,6 +4,18 @@ body {
 
 }
 
+.all-Recipes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+aside {
+    position: sticky;
+    top: 50px;
+}
+
 .Recipe-card-icon {
     width: 15px;
     height: 15px;
