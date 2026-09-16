@@ -255,7 +255,7 @@ span {
 
 /* ADD RECIPE */
 
-/* .addRecipeSite {
+.addRecipeSite {
 
     section {
         padding: var(--bodyMargin);
@@ -368,4 +368,4 @@ span {
         display: flex;
         align-items: center;
     }
-} */
+}

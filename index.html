@@ -4,304 +4,678 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+
+	<title>Food4Thought</title>
+
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 	</style>
-	<link rel="stylesheet" href="./assets/css/style.css" />
-	<link rel="stylesheet" href="./assets/css/Recipe-card.css" />
-	<script src="./assets/js/app.js" defer></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+	<link rel="stylesheet" href="./assets/css/style.css" />
+
+	<script src="./assets/js/app.js" defer></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-
 	<header>
-		<h1 class="logo"><a href="index.html">FOOD4THOUGHT</a></h1>
+
+		<h1 class="logo">
+			<a href="index.html">FOOD4THOUGHT</a>
+		</h1>
+
 		<ul class="globalNav">
-			<li><a href="allRecipes.html">Recipes</a></li>
-			<li><a href="#">Tools & <br>
-					Reviews</a></li>
-			<li><a href="#">Foodstories <br>& Tips</a></li>
+			<li>
+				<a href="allRecipes.html">Recipes</a>
+			</li>
+
+			<li>
+				<a href="allTools.html">
+					Tools & <br>
+					Reviews
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Foodstories <br>
+					& Tips
+				</a>
+			</li>
 		</ul>
+
 		<div class="loginSearchCircles">
+
 			<a href="#">
-				<div class="headerSearch"><i class="fa-solid fa-magnifying-glass"></i></div>
+				<div class="headerSearch">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
 			</a>
+
 			<a href="#">
-				<div class="login"><i class="fa-regular fa-user"></i></div>
+				<div class="login">
+					<i class="fa-regular fa-user"></i>
+				</div>
 			</a>
+
 		</div>
 
 	</header>
-	<section class="recipeCards">
-		<div class="Recipe-card">
-			<img class="Recipe-card-img" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-				alt="Food-img">
 
-			<div class="Recipe-card-info">
-				<h1 Class="Recipe-h1-card">Æblekage</h1>
-				<span></span>
-				<div class="Recipe-chef-info">
-					<h2 Class="Recipe-h2-card">By Emma</h2> <img class="Recipe-card-icon-cook"
-						src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+	<!-- RECENTLY ADDED RECIPES -->
+
+	<section class="relatedRecipesSection">
+
+		<h2 class="relatedRecipesTitle">
+			Recently added recipes
+		</h2>
+
+		<div class="relatedRecipes">
+
+
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
+					alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
 				</div>
-				<div class="time-container"><img Class="Recipe-card-icon"
-						src="assets/img/alarm_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="Clock">
-					<p Class="Recipe-p-card">1 time</p>
+
+			</a>
+
+
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
+					alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
 				</div>
-				<Div class="Recipe-card-buttons">
-					<button Class="Recipe-button-card1"> <img Class="Recipe-card-icon"
-							src="assets/img/bookmark_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">Save
-						as</button>
+
+			</a>
 
 
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
+					alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
+				</div>
+
+			</a>
 
 
-					<button Class="Recipe-button-card2">Go to recipe</button>
-				</Div>
-			</div>
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
+					alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
+				</div>
+
+			</a>
+
+
 		</div>
-		<div class="Recipe-card">
-			<img class="Recipe-card-img" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-				alt="Food-img">
 
-			<div class="Recipe-card-info">
-				<h1 Class="Recipe-h1-card">Æblekage</h1>
-				<span></span>
-				<div class="Recipe-chef-info">
-					<h2 Class="Recipe-h2-card">By Emma</h2> <img class="Recipe-card-icon-cook"
-						src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-				</div>
-				<div class="time-container"><img Class="Recipe-card-icon"
-						src="assets/img/alarm_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="Clock">
-					<p Class="Recipe-p-card">1 time</p>
-				</div>
-				<Div class="Recipe-card-buttons">
-					<button Class="Recipe-button-card1"> <img Class="Recipe-card-icon"
-							src="assets/img/bookmark_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">Save
-						as</button>
-
-
-
-
-					<button Class="Recipe-button-card2">Go to recipe</button>
-				</Div>
-			</div>
-		</div>
-		<div class="Recipe-card">
-			<img class="Recipe-card-img" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-				alt="Food-img">
-
-			<div class="Recipe-card-info">
-				<h1 Class="Recipe-h1-card">Æblekage</h1>
-				<span></span>
-				<div class="Recipe-chef-info">
-					<h2 Class="Recipe-h2-card">By Emma</h2> <img class="Recipe-card-icon-cook"
-						src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-				</div>
-				<div class="time-container"><img Class="Recipe-card-icon"
-						src="assets/img/alarm_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="Clock">
-					<p Class="Recipe-p-card">1 time</p>
-				</div>
-				<Div class="Recipe-card-buttons">
-					<button Class="Recipe-button-card1"> <img Class="Recipe-card-icon"
-							src="assets/img/bookmark_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">Save
-						as</button>
-
-
-
-
-					<button Class="Recipe-button-card2">Go to recipe</button>
-				</Div>
-			</div>
-		</div>
-		<div class="Recipe-card">
-			<img class="Recipe-card-img" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-				alt="Food-img">
-
-			<div class="Recipe-card-info">
-				<h1 Class="Recipe-h1-card">Æblekage</h1>
-				<span></span>
-				<div class="Recipe-chef-info">
-					<h2 Class="Recipe-h2-card">By Emma</h2> <img class="Recipe-card-icon-cook"
-						src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-				</div>
-				<div class="time-container"><img Class="Recipe-card-icon"
-						src="assets/img/alarm_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="Clock">
-					<p Class="Recipe-p-card">1 time</p>
-				</div>
-				<Div class="Recipe-card-buttons">
-					<button Class="Recipe-button-card1"> <img Class="Recipe-card-icon"
-							src="assets/img/bookmark_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">Save
-						as</button>
-
-
-
-
-					<button Class="Recipe-button-card2">Go to recipe</button>
-				</Div>
-			</div>
-		</div>
 	</section>
+
+
+	<!-- TOOLS -->
+
 	<section class="toolCards">
+
 		<div class="toolCard">
-			<img src="assets/img/tool-card.png" alt="Food-img" class="toolCardImg">
+
+			<img src="assets/img/tool-card.png" alt="KitchenAid Artisan stand mixer" class="toolCardImg">
 
 			<div class="toolCardInfo">
+
 				<div>
-					<h1>Kitchenaid Artisan <br> standmixer</h1>
+
+					<h1>
+						Kitchenaid Artisan <br>
+						standmixer
+					</h1>
+
 					<div class="toolCardProfile">
+
 						<p>By Emma Risgaard</p>
+
 						<div class="profileHats">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 						</div>
+
 					</div>
+
 				</div>
+
 				<hr>
+
 				<div class="toolCardButtons">
+
 					<div class="saveNlike">
+
 						<i class="fa-regular fa-bookmark"></i>
+
 						<div class="totalLikes">
+
 							<i class="fa-regular fa-heart"></i>
+
 							<p>1000 likes</p>
+
 						</div>
+
 					</div>
-					<button>Go to tool</button>
+
+					<button>
+						Go to tool
+					</button>
+
 				</div>
+
 			</div>
+
 		</div>
+
+
 		<div class="toolCard">
-			<img src="assets/img/tool-card.png" alt="Food-img" class="toolCardImg">
+
+			<img src="assets/img/tool-card.png" alt="KitchenAid Artisan stand mixer" class="toolCardImg">
 
 			<div class="toolCardInfo">
+
 				<div>
-					<h1>Kitchenaid Artisan <br> standmixer</h1>
+
+					<h1>
+						Kitchenaid Artisan <br>
+						standmixer
+					</h1>
+
 					<div class="toolCardProfile">
+
 						<p>By Emma Risgaard</p>
+
 						<div class="profileHats">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 						</div>
+
 					</div>
+
 				</div>
+
 				<hr>
+
 				<div class="toolCardButtons">
+
 					<div class="saveNlike">
+
 						<i class="fa-regular fa-bookmark"></i>
+
 						<div class="totalLikes">
+
 							<i class="fa-regular fa-heart"></i>
+
 							<p>1000 likes</p>
+
 						</div>
+
 					</div>
-					<button>Go to tool</button>
+
+					<button>
+						Go to tool
+					</button>
+
 				</div>
+
 			</div>
+
 		</div>
+
+
 		<div class="toolCard">
-			<img src="assets/img/tool-card.png" alt="Food-img" class="toolCardImg">
+
+			<img src="assets/img/tool-card.png" alt="KitchenAid Artisan stand mixer" class="toolCardImg">
 
 			<div class="toolCardInfo">
+
 				<div>
-					<h1>Kitchenaid Artisan <br> standmixer</h1>
+
+					<h1>
+						Kitchenaid Artisan <br>
+						standmixer
+					</h1>
+
 					<div class="toolCardProfile">
+
 						<p>By Emma Risgaard</p>
+
 						<div class="profileHats">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 						</div>
+
 					</div>
+
 				</div>
+
 				<hr>
+
 				<div class="toolCardButtons">
+
 					<div class="saveNlike">
+
 						<i class="fa-regular fa-bookmark"></i>
+
 						<div class="totalLikes">
+
 							<i class="fa-regular fa-heart"></i>
+
 							<p>1000 likes</p>
+
 						</div>
+
 					</div>
-					<button>Go to tool</button>
+
+					<button>
+						Go to tool
+					</button>
+
 				</div>
+
 			</div>
+
 		</div>
+
+
 		<div class="toolCard">
-			<img src="assets/img/tool-card.png" alt="Food-img" class="toolCardImg">
+
+			<img src="assets/img/tool-card.png" alt="KitchenAid Artisan stand mixer" class="toolCardImg">
 
 			<div class="toolCardInfo">
+
 				<div>
-					<h1>Kitchenaid Artisan <br> standmixer</h1>
+
+					<h1>
+						Kitchenaid Artisan <br>
+						standmixer
+					</h1>
+
 					<div class="toolCardProfile">
+
 						<p>By Emma Risgaard</p>
+
 						<div class="profileHats">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 							<img class="Recipe-card-icon-cook" src="assets/img/chef-hat.svg" alt="">
+
 						</div>
+
 					</div>
+
 				</div>
+
 				<hr>
+
 				<div class="toolCardButtons">
+
 					<div class="saveNlike">
-						<i class="fa-regular fa-bookmark"></i>
-						<div class="totalLikes">
-							<i class="fa-regular fa-heart"></i>
-							<p>1000 likes</p>
+
+						<div class="saveNlike">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<div class="totalLikes">
+
+								<i class="fa-regular fa-heart"></i>
+
+								<p>1000 likes</p>
+
+							</div>
+
 						</div>
+
 					</div>
-					<button>Go to tool</button>
+
+					<button>
+						Go to tool
+					</button>
+
 				</div>
+
 			</div>
+
 		</div>
 
 	</section>
+
+
+	<!-- TOOL CATEGORIES -->
+
 	<section class="toolCategories">
+
 		<div class="toolCategori">
-			<img src="assets/img/knives-circle.png" alt="">
-			<p>Knives & cutting</p>
+
+			<img src="assets/img/knives-circle.png" alt="Knives and cutting tools">
+
+			<p>
+				Knives & cutting
+			</p>
+
 		</div>
+
+
 		<div class="toolCategori">
-			<img src="assets/img/pots-pans-circle.png" alt="">
-			<p>Cookware</p>
+
+			<img src="assets/img/pots-pans-circle.png" alt="Cookware">
+
+			<p>
+				Cookware
+			</p>
+
 		</div>
+
+
 		<div class="toolCategori">
-			<img src="assets/img/kitchen-machines-circle.png" alt="">
-			<p>Kitchen appliances</p>
+
+			<img src="assets/img/kitchen-machines-circle.png" alt="Kitchen appliances">
+
+			<p>
+				Kitchen appliances
+			</p>
+
 		</div>
+
+
 		<div class="toolCategori">
-			<img src="assets/img/baking-tools-circle.png" alt="">
-			<p>Baking and pastry</p>
+
+			<img src="assets/img/baking-tools-circle.png" alt="Baking and pastry tools">
+
+			<p>
+				Baking and pastry
+			</p>
+
 		</div>
+
+
 		<div class="toolCategori">
-			<img src="assets/img/containers-circle.png" alt="">
-			<p>Kitchen essencials</p>
+
+			<img src="assets/img/containers-circle.png" alt="Kitchen essentials">
+
+			<p>
+				Kitchen essentials
+			</p>
+
 		</div>
+
+
 		<div class="toolCategori">
-			<img src="assets/img/grill-tools-circle.png" alt="">
-			<p>Grill & Outdoorcookink</p>
+
+			<img src="assets/img/grill-tools-circle.png" alt="Grill and outdoor cooking">
+
+			<p>
+				Grill & Outdoor cooking
+			</p>
+
 		</div>
+
 	</section>
+
+
+	<!-- FOOTER -->
+
 	<footer>
-		<h1 class="logoFooter"><a href="index.html">FOOD4THOUGHT</a></h1>
+
+		<h1 class="logoFooter">
+			<a href="index.html">
+				FOOD4THOUGHT
+			</a>
+		</h1>
+
+
 		<ul class="footerNav">
-			<li><a href="#">Support</a></li>
-			<li><a href="#">Cookie Policy</a></li>
-			<li><a href="#">Copyright</a></li>
+
+			<li>
+				<a href="#">
+					Support
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Cookie Policy
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Copyright
+				</a>
+			</li>
+
 		</ul>
+
+
 		<ul class="footerNav">
-			<li><a href="allRecipes.html">Recipes</a></li>
-			<li><a href="#">Foodstories & tips</a></li>
-			<li><a href="#">Tools & Recommendations</a></li>
-			<li><a href="#">Profile</a></li>
+
+			<li>
+				<a href="allRecipes.html">
+					Recipes
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Foodstories & tips
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Tools & Recommendations
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					Profile
+				</a>
+			</li>
+
 		</ul>
-		<div class="footerSearch"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+
+		<div class="footerSearch">
+			<i class="fa-solid fa-magnifying-glass"></i>
+		</div>
+
 	</footer>
+
 </body>
 
 </html>
