@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Jura', sans-serif;
     background-color: #EDEDEA;
 
@@ -247,4 +247,125 @@ span {
     border-color: #13224A 1px solid;
     color: #13224A;
 
+} */
+
+
+
+
+
+/* ADD RECIPE */
+
+.addRecipeSite {
+
+    section {
+        padding: var(--bodyMargin);
+    }
+
+
+    input[type="number"],
+    input[type="text"],
+    select {
+        height: 30px;
+
+        border-radius: 10px;
+
+        padding: 5px;
+
+        outline: none;
+
+        border: solid 1px var(--lightBlue);
+
+        box-shadow: var(--innerShadow);
+
+        background-color: white;
+    }
+
+
+    input[type="text"] {
+        width: 250px;
+    }
+
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+
+    select {
+        border: solid 1px var(--darkBlue);
+    }
+
+
+    .addRecipeTime {
+        display: flex;
+
+        gap: var(--gap);
+
+
+        input {
+            width: 50px;
+        }
+
+
+        .totalTime {
+            height: 30px;
+
+            border-radius: 10px;
+
+            width: 50px;
+
+            background-color: #D7D7D7;
+        }
+    }
+
+
+    .addRecipeDescription {
+
+        input {
+            height: 150px;
+        }
+    }
+
+
+    .addRecipeTags {
+        display: flex;
+    }
+
+
+    .addRecipeAddIngredient {
+
+        .AddIngredient {
+            display: flex;
+
+            gap: var(--gap);
+        }
+
+
+        .addIngredientTitels {
+            display: flex;
+
+            gap: var(--gap);
+
+
+            p {
+                width: 55px;
+            }
+        }
+    }
+
+
+    .addRecipeMealtype,
+    .addRecipeAllergeens,
+    .addRecipePrefferences {
+        display: flex;
+        flex-direction: row;
+
+        gap: var(--gap);
+    }
+
+
+    .checkBox {
+        display: flex;
+        align-items: center;
+    }
 }
