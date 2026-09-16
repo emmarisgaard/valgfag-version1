@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
 	<title>Food4Thought</title>
 
@@ -16,9 +18,12 @@
 	<script src="./assets/js/app.js" defer></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 
 <body>
+
 
 	<header>
 
@@ -65,21 +70,170 @@
 	</header>
 
 
-	<!-- RECENTLY ADDED RECIPES -->
+	<!-- FRONT PAGE HERO -->
+
+	<section class="frontPageHero">
+
+		<video autoplay muted loop playsinline>
+
+			<source src="assets/img/front-page-hero.mp4" type="video/mp4">
+
+		</video>
+
+
+		<div class="frontPageHeroText">
+
+			<h1>
+				COOK. SHARE. INSPIRE.
+			</h1>
+
+			<p>
+				Discover recipes, stories, and kitchen tips from home cooks, passionate amateurs, and professional
+				chefs.
+			</p>
+
+		</div>
+
+
+		<div class="frontPageHeroButtons">
+
+			<button>
+				+ Add Recipe
+			</button>
+
+			<button>
+				+ Add Tool Review
+			</button>
+
+			<button>
+				+ Add Foodstory
+			</button>
+
+		</div>
+
+	</section>
+
+
+	<!-- RECIPES BY PROF -->
 
 	<section class="relatedRecipesSection">
 
-		<h2 class="relatedRecipesTitle">
-			Recently added recipes
-		</h2>
+		<div class="relatedSectionHeader">
+
+			<h2 class="relatedRecipesTitle">
+				Recipes by professional cooks
+			</h2>
+
+			<a href="allRecipes.html" class="seeAllButton">
+				See all professional recipes
+			</a>
+
+		</div>
+
 
 		<div class="relatedRecipes">
 
 
 			<a href="singleRecipe.html" class="recipeCard">
 
-				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-					alt="Apple cake">
+				<img class="recipeCardImage" src="assets/img/dinner-circle.jpg" alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
+				</div>
+
+			</a>
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/dinner-circle.jpg" alt="Apple cake">
+
+				<div class="recipeCardContent">
+
+					<h2 class="recipeCardTitle">
+						Æblekage
+					</h2>
+
+					<hr class="recipeCardDivider">
+
+					<div class="recipeCardAuthor">
+
+						<span>By Emma</span>
+
+						<img class="recipeCardChefIcon"
+							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+					</div>
+
+					<div class="recipeCardTime">
+
+						<i class="fa-regular fa-clock"></i>
+
+						<span>1 time</span>
+
+					</div>
+
+					<div class="recipeCardActions">
+
+						<div class="recipeCardSave">
+
+							<i class="fa-regular fa-bookmark"></i>
+
+							<span>Save as</span>
+
+						</div>
+
+						<span class="recipeCardView">
+							Go to recipe
+						</span>
+
+					</div>
+
+				</div>
+
+			</a>
+
+			<a href="singleRecipe.html" class="recipeCard">
+
+				<img class="recipeCardImage" src="assets/img/dinner-circle.jpg" alt="Apple cake">
 
 				<div class="recipeCardContent">
 
@@ -129,8 +283,7 @@
 
 			<a href="singleRecipe.html" class="recipeCard">
 
-				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-					alt="Apple cake">
+				<img class="recipeCardImage" src="assets/img/dinner-circle.jpg" alt="Apple cake">
 
 				<div class="recipeCardContent">
 
@@ -180,59 +333,7 @@
 
 			<a href="singleRecipe.html" class="recipeCard">
 
-				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-					alt="Apple cake">
-
-				<div class="recipeCardContent">
-
-					<h2 class="recipeCardTitle">
-						Æblekage
-					</h2>
-
-					<hr class="recipeCardDivider">
-
-					<div class="recipeCardAuthor">
-
-						<span>By Emma</span>
-
-						<img class="recipeCardChefIcon"
-							src="assets/img/chef_hat_24dp_EDEDEA_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-
-					</div>
-
-					<div class="recipeCardTime">
-
-						<i class="fa-regular fa-clock"></i>
-
-						<span>1 time</span>
-
-					</div>
-
-					<div class="recipeCardActions">
-
-						<div class="recipeCardSave">
-
-							<i class="fa-regular fa-bookmark"></i>
-
-							<span>Save as</span>
-
-						</div>
-
-						<span class="recipeCardView">
-							Go to recipe
-						</span>
-
-					</div>
-
-				</div>
-
-			</a>
-
-
-			<a href="singleRecipe.html" class="recipeCard">
-
-				<img class="recipeCardImage" src="assets/img/358A7617-2153-4856-98E4-6D5FFD5D4EE7_4_5005_c.jpeg"
-					alt="Apple cake">
+				<img class="recipeCardImage" src="assets/img/dinner-circle.jpg" alt="Apple cake">
 
 				<div class="recipeCardContent">
 
@@ -675,6 +776,7 @@
 		</div>
 
 	</footer>
+
 
 </body>
 
