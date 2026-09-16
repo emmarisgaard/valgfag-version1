@@ -19,7 +19,9 @@ body {
     h3 {
         margin: 0;
     }
+}
 
+:root {
     /* VARIABLES  */
     /* Colours */
     --backgroundColour: #F5F5F5;
@@ -29,12 +31,12 @@ body {
 
     /* Typography */
     --textFont: "jura",
-    sans-serif;
+        sans-serif;
     --midHeader: 24px;
     --bigHeader: 36px;
     --bigBigHeader: 64px;
     --logoFont: "Jockey One",
-    sans-serif;
+        sans-serif;
     --logoSize: 40px;
 
     /* Spacing */
@@ -51,11 +53,16 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     background-color: var(--lightBlue);
-    padding: 40px;
+    padding-inline: 40px;
+    height: 70px;
 
     .logo {
         font-size: var(--logoSize);
@@ -64,8 +71,9 @@ header {
         width: 600px;
 
         a {
+            font-family: var(--logoFont);
             text-decoration: none;
-            color: black;
+            color: var(--darkBlue);
         }
     }
 
@@ -90,11 +98,15 @@ header {
             font-weight: bold;
             display: flex;
             text-align: center;
+            border-bottom: 2px;
         }
 
         a:hover {
-            text-decoration: underline;
-            text-underline-offset: 6px;
+            border-bottom: 2px solid var(--darkBlue);
+        }
+
+        a.active {
+            border-bottom: 2px solid var(--darkBlue);
         }
 
 
@@ -105,19 +117,21 @@ header {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: var(--gap);
+        gap: var(--smallGap);
         width: 600px;
 
-        i {
+        i,
+        a {
             color: var(--lightBlue);
-            font-size: 25px;
+            font-size: 20px;
+            text-decoration: none;
         }
     }
 
     .headerSearch {
         background-color: var(--darkBlue);
-        height: 45px;
-        width: 45px;
+        height: 35px;
+        width: 35px;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -126,8 +140,8 @@ header {
 
     .login {
         background-color: var(--darkBlue);
-        height: 45px;
-        width: 45px;
+        height: 35px;
+        width: 35px;
         border-radius: 100%;
         display: flex;
         align-items: center;
