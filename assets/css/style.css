@@ -256,44 +256,175 @@ footer {
 /* ALL RECIPES */
 
 /* SINGLE RECIPE */
-.recipeAuthor,
-.recipePrep-Cook {
+
+.singleRecipeInfo {
+
+
+
+    .singleRecipeStars {
+        display: flex;
+        flex-direction: row;
+        gap: var(--smallGap);
+        align-items: center;
+    }
+
+    .singleRecipeTags {
+        display: flex;
+        flex-direction: row;
+        gap: var(--mediumGap);
+
+        div {
+            min-width: 50px;
+            padding: 5px 15px 5px 15px;
+            background-color: var(--lightBlue);
+            box-shadow: var(--shadow);
+            border-radius: 50px;
+        }
+    }
+
+    .recipeTime {
+        display: flex;
+        gap: var(--mediumGap);
+
+        i {
+            font-size: 18px;
+            max-height: 18px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .fa-clock,
+    .fa-circle-user {
+        font-size: 20px;
+        padding-top: 4px;
+    }
+}
+
+
+.singleRecipeIngredientsNInstructions {
+    padding: var(--bodyMargin);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.singleRecipePortions {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    gap: 3px;
+
+    .singleRecipeMinus {
+        background-color: var(--darkBlue);
+        color: var(--offWhite);
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .singleRecipePortion {
+        background-color: var(--darkBlue);
+        color: var(--offWhite);
+        padding: 5px 15px 5px 15px;
+    }
+
+    .singleRecipePlus {
+        background-color: var(--darkBlue);
+        color: var(--offWhite);
+        padding: 5px 15px 5px 15px;
+        border-radius: 0px 10px 10px 0;
+    }
 }
 
-.recipeTitleAuthor {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
-.recipeTime {
-    display: flex;
-    gap: 5px;
-}
-
-.chefHats {
-    display: flex;
-    gap: 0;
-}
-
-.fa-clock,
-.fa-circle-user {
-    font-size: 20px;
-    padding-top: 4px;
-}
-
-.recipeInfo {
+.singleRecipeIngredients {
     display: flex;
     flex-direction: column;
     gap: var(--largeGap);
 }
 
-.recipeInfoRating {
-    display: flex
+.singleRecipeIngredientList {
+    display: flex;
+    gap: var(--mediumGap);
+    flex-direction: column;
+
+    .singleRecipeIngredient {
+        display: flex;
+        flex-direction: row;
+        gap: var(--gap);
+        align-items: center;
+
+        i {
+            font-size: 18px;
+            max-height: 18px;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
 }
+
+.singleRecipeInstructions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--largeGap);
+
+    .singleRecipeCookmode {
+
+        i {
+            font-size: 35px;
+            color: var(--darkBlue);
+        }
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: var(--mediumGap);
+        padding-left: 20px;
+        margin: 0;
+
+    }
+}
+
+.singleRecipeTips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: var(--bodyMargin);
+
+}
+
+.singleRecipeTip {
+    display: flex;
+    gap: var(--mediumGap);
+}
+
+.singleRecipeHr hr {
+    height: 5px;
+    background-color: var(--darkBlue);
+    border: none;
+    width: 900px;
+}
+
+
+.singleRecipeRatingSystem {
+    padding: var(--bodyMargin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mediumGap);
+
+    .singleRecipeRatingStars {
+        i {
+            font-size: 50px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 /* ADD RECIPE */
@@ -539,38 +670,67 @@ footer {
 
 }
 
-/* SINGLE TOOL */
-.singleToolInfo {
+/* SINGLE TOOL (& single recipe)*/
+.singleToolInfo,
+.singleRecipeInfo {
     display: grid;
     padding: var(--bodyMargin);
     grid-template-columns: 1fr 1fr;
     gap: var(--largeGap);
 
-    .singleToolDetails {
+
+    .profileHats {
+        display: flex;
+        flex-direction: row;
+
+        img {
+            height: 18px;
+            width: 18px;
+        }
+    }
+
+
+    .singleToolDetails,
+    .singleRecipeDetails {
         display: flex;
         flex-direction: column;
         gap: var(--gap);
     }
 
-    .singleToolTitle {
+    .singleToolTitle,
+    .singleRecipeTitle {
+        display: flex;
+        flex-direction: row;
+        gap: var(--mediumGap);
+        align-items: baseline;
 
         i {
-            font-size: 35px;
+            font-size: 18px;
         }
     }
 
     .singleToolTitle,
     .singleToolName,
-    .singleToolDate {
+    .singleToolDate,
+    .singleRecipeName {
         display: flex;
         align-items: center;
         gap: var(--mediumGap);
     }
 
     .singleToolProfile,
-    .singleToolLikesNComments {
+    .singleToolLikesNComments,
+    .singleRecipeProfile,
+    .singleToolStarsNComments {
         display: flex;
         gap: var(--largeGap);
+
+        i {
+            font-size: 18px;
+            max-height: 18px;
+            padding: 0;
+            margin: 0;
+        }
     }
 
     .singleToolLikesNComments {
@@ -588,6 +748,8 @@ footer {
 
     img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
 
