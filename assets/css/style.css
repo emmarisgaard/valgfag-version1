@@ -173,10 +173,10 @@ footer {
     /* LOGO */
     .logoFooter {
         font-size: var(--logoSize);
-        font-family: var(--logoFont);
         font-weight: bolder;
 
         a {
+            font-family: var(--logoFont);
             text-decoration: none;
             color: var(--offWhite);
         }
@@ -678,7 +678,7 @@ footer {
     padding: var(--sectionPadding)
 }
 
-/* NEW: heading + see all button */
+
 .relatedSectionHeader {
     display: flex;
     justify-content: space-between;
@@ -690,7 +690,6 @@ footer {
     font-size: var(--bigHeader);
 }
 
-/* NEW: See all button */
 .seeAllButton {
     background-color: var(--darkBlue);
     color: var(--offWhite);
