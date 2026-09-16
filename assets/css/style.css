@@ -752,6 +752,14 @@ footer {
     margin-bottom: 30px;
 }
 
+.circleSectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-inline: var(--sectionPadding);
+}
+
 .relatedRecipesTitle {
     font-size: var(--bigHeader);
 }
@@ -848,6 +856,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-decoration: none;
+        color: inherit;
 
         img {
             height: 175px;
