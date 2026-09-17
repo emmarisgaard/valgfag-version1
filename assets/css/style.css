@@ -1152,6 +1152,7 @@ footer {
     .singleToolStarsNComments {
         display: flex;
         gap: var(--largeGap);
+        align-items: center;
 
         i {
             font-size: 18px;
@@ -1161,9 +1162,19 @@ footer {
         }
     }
 
+
     .singleToolLikesNComments {
-        text-decoration: underline;
-        text-underline-offset: 5px;
+        div {
+            display: flex;
+            gap: var(--mediumGap);
+
+        }
+
+        p,
+        a {
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
     }
 
     .singleToolIcons {
