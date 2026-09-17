@@ -467,14 +467,15 @@ footer {
 .allRecipesGrid {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 270px);
+    grid-template-columns: repeat(auto-fit, 250px);
     gap: var(--mediumGap);
+    justify-content: center;
 }
 
 .recipeCard {
     background-color: var(--darkBlue);
     height: 320px;
-    width: 270px;
+    width: 250px;
     display: grid;
     grid-template-rows: auto 1fr;
     font-size: 10px;
@@ -743,7 +744,7 @@ footer {
 
 /* RELATED RECIPES */
 .relatedRecipesSection {
-    padding: var(--sectionPadding);
+    padding: var(--bodyMargin);
 }
 
 .relatedSectionHeader {
@@ -758,7 +759,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    padding-inline: var(--sectionPadding);
+    padding-inline: 140px;
 }
 
 .relatedRecipesTitle {
@@ -784,6 +785,7 @@ footer {
     flex-direction: row;
     gap: var(--mediumGap);
     padding: 0;
+    justify-content: center;
 }
 
 /* RELATED TOOLS */
@@ -799,6 +801,7 @@ footer {
     flex-direction: row;
     gap: var(--mediumGap);
     padding: 0;
+    justify-content: center;
 }
 
 /* COMMENTS */
@@ -939,7 +942,12 @@ footer {
     grid-template-columns: repeat(auto-fit, 270px);
     gap: var(--mediumGap);
     justify-content: center;
+
+}
+
+.allToolsPadding {
     padding: var(--bodyMargin);
+
 }
 
 .toolCard {
@@ -1098,7 +1106,34 @@ footer {
         gap: var(--mediumGap);
 
         i {
-            font-size: 18px;
+            font-size: 35px;
+        }
+    }
+
+    .singleToolTitle {
+        position: relative;
+
+        .recommendationBox {
+            position: absolute;
+            left: 0;
+            bottom: 45px;
+
+            background-color: var(--darkBlue);
+            color: var(--offWhite);
+            padding: 10px 15px;
+            border-radius: 8px;
+
+            font-size: 14px;
+            white-space: nowrap;
+
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease;
+        }
+
+        &:hover .recommendationBox {
+            opacity: 1;
+            visibility: visible;
         }
     }
 
