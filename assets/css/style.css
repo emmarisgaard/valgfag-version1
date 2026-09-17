@@ -823,6 +823,7 @@ footer {
             width: 400px;
             min-height: 45px;
             padding: 10px;
+            border-radius: 10px 0 0 10px;
         }
 
         button {
@@ -831,7 +832,23 @@ footer {
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 0 10px 10px 0;
         }
+
+        button:hover {
+            background-color: var(--lightBlue);
+            border: 2px solid;
+            color: var(--darkBlue);
+            border-color: var(--darkBlue);
+            box-shadow: var(--innerShadow);
+        }
+    }
+
+
+    .otherComments {
+        display: flex;
+        flex-direction: column;
+        gap: var(--largeGap);
     }
 
     .otherComment {
@@ -841,7 +858,33 @@ footer {
         background-color: var(--lightBlue);
     }
 
+    .seeMore {
+        padding-inline: 25px;
+        background-color: var(--darkBlue);
+        color: white;
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .seeMore:hover {
+        background-color: var(--lightBlue);
+        border: 2px solid;
+        color: var(--darkBlue);
+        border-color: var(--darkBlue);
+        box-shadow: var(--innerShadow);
+    }
+
+    .reply {
+        text-decoration: underline;
+    }
+
+    .reply:hover {
+        font-weight: bold;
+    }
 }
 
 /* PROFILE */
@@ -896,6 +939,7 @@ footer {
     grid-template-columns: repeat(auto-fit, 270px);
     gap: var(--mediumGap);
     justify-content: center;
+    padding: var(--bodyMargin);
 }
 
 .toolCard {
@@ -936,13 +980,23 @@ footer {
 .toolCardProfile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 10px;
+    gap: var(--mediumGap);
 }
 
 .toolCardProfile p {
     font-size: 16px;
 }
+
+.timeStamp {
+    padding-left: 40px;
+
+    p {
+        font-size: 12px;
+    }
+}
+
 
 .profileHats {
     display: flex;
