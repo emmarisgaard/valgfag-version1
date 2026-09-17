@@ -1106,7 +1106,34 @@ footer {
         gap: var(--mediumGap);
 
         i {
-            font-size: 18px;
+            font-size: 35px;
+        }
+    }
+
+    .singleToolTitle {
+        position: relative;
+
+        .recommendationBox {
+            position: absolute;
+            left: 0;
+            bottom: 45px;
+
+            background-color: var(--darkBlue);
+            color: var(--offWhite);
+            padding: 10px 15px;
+            border-radius: 8px;
+
+            font-size: 14px;
+            white-space: nowrap;
+
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.2s ease;
+        }
+
+        &:hover .recommendationBox {
+            opacity: 1;
+            visibility: visible;
         }
     }
 
